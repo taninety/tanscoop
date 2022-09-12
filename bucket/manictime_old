@@ -1,0 +1,25 @@
+{
+    "version": "4.6.22.0",
+    "description": "A time tracking software (older download)",
+    "homepage": "https://www.manictime.com",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://www.manictime.com/pricing"
+    },
+    "url": "https://cdn.manictime.com/setup/v4_6_22_0/ManicTimeUsb.zip",
+    "hash": "D2F87881BC1C67750E317CC36C025494484D0EB5F2408AB84710A2EB52AB04BE",
+    "shortcuts": [
+        [
+            "ManicTimeClient.exe",
+            "ManicTime"
+        ]
+    ],
+    "persist": "Data",
+    "checkver": {
+        "url": "http://services.manictime.com/Versions/GetLatestVersionNumber",
+        "jsonpath": "$.version"
+    },
+    "autoupdate": {
+        "url": "https://cdn.manictime.com/setup/v$underscoreVersion/ManicTimeUsb.zip"
+    }
+}
