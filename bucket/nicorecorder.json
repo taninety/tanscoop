@@ -13,7 +13,10 @@
             "Niconico Live Recorder"
         ]
     ],
-    "checkver": "（仮 ver([\\d.]+)",
+    "checkver": {
+        "url": "https://github.com/guest-nico/nicoNewStreamRecorderKakkoKari/releases/tag/releases",
+        "regex": "ver([\\d.]+)"
+    },
     "autoupdate": {
         "url": "https://github.com/guest-nico/nicoNewStreamRecorderKakkoKari/releases/download/releases/ver$version.zip",
         "extract_dir": "（仮 ver$version"
